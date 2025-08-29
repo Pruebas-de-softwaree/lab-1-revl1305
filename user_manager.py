@@ -38,4 +38,7 @@ if __name__ == "__main__":
                 duplicados.append(i)
 
         print("Duplicados:", duplicados)
-        
+        start = time.time()   # inicia el timer
+        print(usuario.get_all_names())
+        end = time.time()
+        print ("Duracion:", end - start,"segundos")
