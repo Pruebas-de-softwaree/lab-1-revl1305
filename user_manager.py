@@ -31,4 +31,11 @@ if __name__ == "__main__":
         usuario=UserManager()
         for i in range(1000):    
              usuario.add_user(i,f"yo soy el :{i}")
-        print(usuario.get_all_names())
+        usuario.add_user(37,"ramon")
+        duplicados=[]
+        for i in usuario.get_all_names():
+            if usuario.get_all_names().count(i) > 1 and i not in duplicados:
+                duplicados.append(i)
+
+        print("Duplicados:", duplicados)
+        
