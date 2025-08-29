@@ -29,6 +29,6 @@ class UserManager:
 
 if __name__ == "__main__":
         usuario=UserManager()
-        for i in range(500):    
+        for i in range(1000):    
              usuario.add_user(i,f"yo soy el :{i}")
-        print(usuario.average_user_id())
+        print(usuario.get_all_names())
