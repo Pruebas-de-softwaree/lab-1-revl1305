@@ -30,5 +30,5 @@ class UserManager:
 if __name__ == "__main__":
         usuario=UserManager()
         for i in range(500):    
-             usuario.add_user(i,"yo soy el :{i}")
-        print(usuario.get_all_names())
+             usuario.add_user(i,f"yo soy el :{i}")
+        print(usuario.find_user(37))
